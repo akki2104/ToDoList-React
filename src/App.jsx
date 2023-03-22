@@ -4,6 +4,7 @@ import List from "./List"
 
 
 const App = () => {
+    
     // let finalValue;
 
     // add items
@@ -19,6 +20,7 @@ const App = () => {
     const addItems = () => {
         if(listItem!==""){
             chArray((oldValues)=>{
+                console.log(oldValues)
                 return [...oldValues,listItem];
                 
             })
@@ -28,7 +30,14 @@ const App = () => {
         chList("");
     }
 
+    // document.addEventListener("keydown",(e)=>{
+    //     if(e.key==="Enter"){
+    //         addItems();
+    //     }else{console.log("eat 5 star do nothing")}
+    // })
 
+
+    
     // delete items
     const deleteItems=(id)=>{
         chArray((oldValues)=>{
