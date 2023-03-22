@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import List from "./List"
 
+
+
 const App = () => {
+    // let finalValue;
 
     // add items
     const [listItem, chList] = useState("")
@@ -9,12 +12,19 @@ const App = () => {
 
     const inputCh = (event) => {
         chList(event.target.value)
+        console.log(event.target.value)
+        // finalValue=event.target.value;
     }
 
     const addItems = () => {
-        chArray((oldValues) => {
-            return [...oldValues, listItem]
-        })
+        if(listItem!==""){
+            chArray((oldValues)=>{
+                return [...oldValues,listItem];
+                
+            })
+        }else{
+            console.log("bhai values to add krle...")
+        }
         chList("");
     }
 
@@ -47,6 +57,7 @@ const App = () => {
                     return <List id={index} text={listValues} onSelect={deleteItems} />
                 })}
             </ul>
+            
         </>
     )
 }

@@ -7,8 +7,9 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #352f5b;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  /* height: 99%; */
 }
 
 code {
@@ -24,6 +25,7 @@ h1 {
 
 .main_div {
   margin-top: 10%;
+  /* height: 81vh; */
 }
 
 
@@ -57,10 +59,11 @@ li {
   margin-bottom: 5%;
 }
 
-li i{
+li i {
   margin-right: 40%;
 }
-li i:hover{
+
+li i:hover {
   color: red;
 }
 
@@ -89,3 +92,5 @@ button:hover {
   padding-left: 1px;
   padding-top: 1px;
 }
+
+
