@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://akkis-todolist-react.netlify.app/).
-The project is deployed at [Netlify](https://akkistodolist-react.netlify.app/).
+This project was bootstrapped with [Create React App].
+The project is deployed at [Netlify](https://akkis-todolist-react.netlify.app/).
 
 ## Available Scripts
 
